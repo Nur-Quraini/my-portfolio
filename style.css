@@ -9,74 +9,73 @@ body {
 /* Header Section with GIF Background */
 header {
     display: flex;
-    flex-direction: column; /* Arrange content vertically */
-    justify-content: center; /* Vertically center the content */
+    flex-direction: column; /* Stack the content vertically */
+    justify-content: flex-start; /* Align items at the top */
     align-items: center; /* Horizontally center the content */
     background: url('https://github.com/your-username/your-repository/raw/main/path-to-your-gif.gif') no-repeat center center;
     color: white;
     text-align: center;
-    padding: 20px; /* Add padding to provide space around the text */
+    padding: 40px; /* Add space around header */
     width: 100%; /* Full width */
-    background-size: cover; /* GIF covers the entire header */
+    background-size: cover; /* Ensure GIF covers the full header */
     background-position: center;
-    height: 350px; /* Increase height for enough space */
+    height: 400px; /* Set header height large enough for both text and nav */
 }
 
-/* Main Title Styling */
 header h1 {
-    font-size: 2.5em; /* Adjust the font size for the main heading */
-    margin: 0; /* Remove any default margin */
+    font-size: 2.5em; /* Size of the main title */
+    margin: 0; /* Remove default margin */
 }
 
-/* Navigation Bar below the Header Text */
-nav {
-    width: 100%; /* Full width of the header */
-    text-align: center;
-    padding: 10px 0; /* Space around the nav links */
-    margin-top: 20px; /* Space between the header title and the nav */
-}
-
-nav ul {
-    list-style: none; /* Remove default list style */
+/* Navigation Styling */
+header nav ul {
+    list-style: none;
     padding: 0;
-    margin: 0;
-    display: flex; /* Use flexbox for horizontal layout */
-    justify-content: center; /* Center the links horizontally */
+    margin-top: 20px; /* Space between the title and nav */
 }
 
-nav ul li {
-    margin: 0 20px; /* Add spacing between the links */
+header nav ul li {
+    display: inline; /* Display the nav items in a row */
+    margin: 0 15px; /* Add space between links */
 }
 
-nav ul li a {
-    color: white; /* Link text color */
-    text-decoration: none; /* Remove underline from the links */
-    font-size: 1.2em; /* Adjust the font size for the links */
-    padding: 5px 10px; /* Add padding around the links */
-    transition: color 0.3s; /* Smooth color change on hover */
+header nav ul li a {
+    color: white; /* Text color for links */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 18px; /* Font size of the links */
 }
 
-nav ul li a:hover {
-    color: #ffcc00; /* Change text color on hover */
-    text-decoration: underline; /* Optional: Underline text when hovered */
-}
-
-/* Section Styling */
+/* Section Styles */
 section {
     padding: 20px;
     margin: 20px;
     background-color: white;
-    border-radius: 5px; /* Rounded corners for the section */
+    border-radius: 5px;
 }
 
-/* Footer Styling */
+h2 {
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+/* Footer Style */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
-
 
 /* Media Queries for Responsiveness */
 
