@@ -11,13 +11,13 @@ header {
     background: url('https://raw.githubusercontent.com/Nur-Quraini/my-portfolio/main/ezgif-5-d1732a4864.gif') no-repeat center center/cover;
     color: white;
     text-align: center;
-    padding: 100px 20px; /* Increase padding for better visibility */
+    padding: 50px 20px; /* Increase padding for better visibility */
     position: sticky;
     top: 0;
     width: 100%;
     background-size: cover;
     background-position: center;
-    height: 300px; /* Adjust the height as per your preference */
+    height: 150px; /* Adjust the height as per your preference */
 }
 
 header h1 {
