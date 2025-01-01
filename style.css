@@ -15,32 +15,25 @@ header {
     background: url('https://github.com/your-username/your-repository/raw/main/path-to-your-gif.gif') no-repeat center center;
     color: white;
     text-align: center;
-    padding: 0; /* Remove extra padding */
-    position: relative; /* To ensure the text is correctly positioned over the background */
-    top: 0;
+    padding: 20px; /* Add padding to provide space around the text */
     width: 100%; /* Full width */
     background-size: cover; /* GIF covers the entire header */
     background-position: center;
-    height: 300px; /* Adjust the header height to fit the text and nav */
+    height: 350px; /* Increase height for enough space */
 }
 
+/* Main Title Styling */
 header h1 {
     font-size: 2.5em; /* Adjust the font size for the main heading */
     margin: 0; /* Remove any default margin */
 }
 
-header h2, header p {
-    margin: 0; /* Remove margin for better alignment */
-    font-size: 1.5em; /* Adjust font size for other headings and paragraphs */
-}
-
-/* Navigation Bar - Now positioned below header text */
+/* Navigation Bar below the Header Text */
 nav {
-    background-color: transparent; /* No background color */
+    width: 100%; /* Full width of the header */
     text-align: center;
     padding: 10px 0; /* Space around the nav links */
-    width: 100%; /* Full width of the header */
-    margin-top: 20px; /* Add space between the header text and nav */
+    margin-top: 20px; /* Space between the header title and the nav */
 }
 
 nav ul {
