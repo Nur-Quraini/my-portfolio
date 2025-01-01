@@ -19,7 +19,7 @@ header {
     width: 100%; /* Full width */
     background-size: cover; /* Ensure GIF covers the full header */
     background-position: center;
-    height: 400px; /* Set header height large enough for both text and nav */
+    height: 300px; /* Set header height large enough for both text and nav */
 }
 
 header h1 {
