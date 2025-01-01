@@ -15,7 +15,7 @@ header {
     color: white;
     text-align: center;
     padding: 0; /* Remove extra padding */
-    position: sticky;
+    position: relative; /* To ensure the text is correctly positioned over the background */
     top: 0;
     width: 100%; /* Full width */
     background-size: cover; /* GIF covers the entire header */
@@ -24,7 +24,8 @@ header {
 }
 
 header h1 {
-    font-size: 3em;
+    font-size: 2em; /* Adjust the font size to make it more visible */
+    margin: 0; /* Remove any margin */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds shadow for better readability */
 }
 
