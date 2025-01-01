@@ -12,7 +12,7 @@ header {
     flex-direction: column; /* Arrange content vertically */
     justify-content: center; /* Vertically center the content */
     align-items: center; /* Horizontally center the content */
-    background: url('https://raw.githubusercontent.com/Nur-Quraini/my-portfolio/main/ezgif-5-d1732a4864.gif') no-repeat center center;
+    background: url('https://github.com/your-username/your-repository/raw/main/path-to-your-gif.gif') no-repeat center center;
     color: white;
     text-align: center;
     padding: 0; /* Remove extra padding */
@@ -21,7 +21,7 @@ header {
     width: 100%; /* Full width */
     background-size: cover; /* GIF covers the entire header */
     background-position: center;
-    height: 250px; /* Set height explicitly */
+    height: 300px; /* Adjust the header height to fit the text and nav */
 }
 
 header h1 {
@@ -34,15 +34,13 @@ header h2, header p {
     font-size: 1.5em; /* Adjust font size for other headings and paragraphs */
 }
 
-/* Navigation Bar */
+/* Navigation Bar - Now positioned below header text */
 nav {
-    position: absolute; /* Position it on top of the header */
-    top: 0;
-    width: 100%; /* Full width of the header */
-    background-color: transparent; /* No background */
+    background-color: transparent; /* No background color */
     text-align: center;
     padding: 10px 0; /* Space around the nav links */
-    z-index: 1; /* Ensure navbar is above the header content */
+    width: 100%; /* Full width of the header */
+    margin-top: 20px; /* Add space between the header text and nav */
 }
 
 nav ul {
