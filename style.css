@@ -1,51 +1,48 @@
 /* General Body Style */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
 }
 
-/* Header Section with GIF Background */
+/* Header Section */
 header {
     display: flex;
-    flex-direction: column; /* Stack the content vertically */
-    justify-content: flex-start; /* Align items at the top */
-    align-items: center; /* Horizontally center the content */
-    background: url('https://raw.githubusercontent.com/Nur-Quraini/my-portfolio/main/ezgif-5-d1732a4864.gif') no-repeat center center;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Vertically center content */
+    align-items: center; /* Horizontally center content */
+    background: url('path-to-your-gif.gif') no-repeat center center;
+    background-size: cover; /* Ensure GIF covers full header */
     color: white;
     text-align: center;
-    padding: 40px; /* Add space around header */
-    width: 100%; /* Full width */
-    background-size: cover; /* Ensure GIF covers the full header */
-    background-position: center;
-    height: 300px; /* Set header height large enough for both text and nav */
+    padding: 40px;
+    height: 400px; /* Set a fixed height for the header */
 }
 
 header h1 {
-    font-size: 2.5em; /* Size of the main title */
-    margin: 0; /* Remove default margin */
+    font-size: 2.5em;
+    margin: 0;
 }
 
-/* Navigation Styling */
 header nav ul {
     list-style: none;
     padding: 0;
-    margin-top: 20px; /* Space between the title and nav */
+    margin-top: 20px;
 }
 
 header nav ul li {
-    display: inline; /* Display the nav items in a row */
-    margin: 0 15px; /* Add space between links */
+    display: inline-block;
+    margin: 0 15px;
 }
 
 header nav ul li a {
-    color: white; /* Text color for links */
-    text-decoration: none; /* Remove underline from links */
-    font-size: 18px; /* Font size of the links */
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
 }
 
-/* Section Styles */
+/* Section Styling */
 section {
     padding: 20px;
     margin: 20px;
@@ -66,7 +63,7 @@ ul li {
     margin: 10px 0;
 }
 
-/* Footer Style */
+/* Footer Styling */
 footer {
     background-color: #333;
     color: white;
@@ -78,82 +75,26 @@ footer {
 }
 
 /* Media Queries for Responsiveness */
-
-/* Mobile devices (max-width: 768px) */
-@media only screen and (max-width: 768px) {
+@media (max-width: 600px) {
     header {
-        height: 200px; /* Decrease header height on smaller screens */
+        padding: 20px; /* Reduce padding on small screens */
+        height: auto; /* Allow height to adjust automatically */
     }
 
-    header h1 {
-        font-size: 2em; /* Reduce the font size */
+    header nav ul {
+        text-align: center;
+        margin-top: 10px;
     }
 
-    header h2, header p {
-        font-size: 1.2em; /* Adjust font size of other text */
-    }
-
-    nav ul {
-        flex-direction: column; /* Stack nav items vertically */
-    }
-
-    nav ul li {
-        margin: 10px 0; /* Add space between vertically stacked links */
-    }
-
-    nav ul li a {
-        font-size: 1.2em; /* Adjust font size */
-        padding: 10px; /* Add padding for better touch interaction */
+    header nav ul li {
+        display: block; /* Stack links vertically on small screens */
+        margin: 5px 0;
     }
 
     section {
-        padding: 15px; /* Reduce padding on smaller screens */
-        margin: 15px; /* Reduce margin */
-    }
-
-    footer {
-        padding: 8px; /* Adjust footer padding */
+        margin: 10px;
     }
 }
-
-/* Tablet devices (max-width: 1024px) */
-@media only screen and (max-width: 1024px) {
-    header {
-        height: 220px; /* Adjust header height for tablet screens */
-    }
-
-    header h1 {
-        font-size: 2.3em; /* Adjust font size */
-    }
-
-    nav ul li a {
-        font-size: 1.1em; /* Adjust font size for tablet */
-    }
-
-    section {
-        padding: 18px; /* Slightly reduce padding */
-        margin: 18px; /* Slightly reduce margin */
-    }
-}
-
-/* Desktop devices (min-width: 1024px) */
-@media only screen and (min-width: 1024px) {
-    header {
-        height: 250px; /* Keep header height for larger screens */
-    }
-
-    header h1 {
-        font-size: 2.5em; /* Keep the larger font size */
-    }
-
-    nav ul li a {
-        font-size: 1.2em; /* Standard font size for links */
-    }
-
-    section {
-        padding: 20px; /* Default padding for larger screens */
-        margin: 20px; /* Default margin for larger screens */
-    }
 
     footer {
         padding: 10px; /* Standard footer padding */
