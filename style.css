@@ -1,38 +1,39 @@
 /* General Body Style */
 body {
     font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
 }
 
-/* Header Section */
+/* Header Section with GIF Background */
 header {
-    display: flex;
-    flex-direction: column; /* Stack items vertically */
-    justify-content: center; /* Vertically center content */
-    align-items: center; /* Horizontally center content */
-    background: url('https://raw.githubusercontent.com/Nur-Quraini/my-portfolio/main/ezgif-5-d1732a4864.gif') no-repeat center center;
-    background-size: cover; /* Ensure GIF covers full header */
+    background: url('your-gif-file.gif') no-repeat center center/cover;
     color: white;
     text-align: center;
-    padding: 40px;
-    height: 400px; /* Set a fixed height for the header */
+    padding: 100px 20px; /* Increase padding for better visibility */
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 300px; /* Adjust the height as per your preference */
 }
 
 header h1 {
-    font-size: 2.5em;
-    margin: 0;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds shadow for better readability */
 }
 
+/* Navigation Bar */
 header nav ul {
     list-style: none;
     padding: 0;
-    margin-top: 20px;
+    margin: 0;
 }
 
 header nav ul li {
-    display: inline-block;
+    display: inline;
     margin: 0 15px;
 }
 
@@ -42,7 +43,7 @@ header nav ul li a {
     font-size: 18px;
 }
 
-/* Section Styling */
+/* Section Styles */
 section {
     padding: 20px;
     margin: 20px;
@@ -63,7 +64,7 @@ ul li {
     margin: 10px 0;
 }
 
-/* Footer Styling */
+/* Footer Style */
 footer {
     background-color: #333;
     color: white;
@@ -74,20 +75,15 @@ footer {
     width: 100%;
 }
 
-/* Media Queries for Responsiveness */
+/* Media Queries for responsiveness */
 @media (max-width: 600px) {
-    header {
-        padding: 20px; /* Reduce padding on small screens */
-        height: auto; /* Allow height to adjust automatically */
-    }
-
     header nav ul {
         text-align: center;
         margin-top: 10px;
     }
 
     header nav ul li {
-        display: block; /* Stack links vertically on small screens */
+        display: block;
         margin: 5px 0;
     }
 
@@ -96,7 +92,3 @@ footer {
     }
 }
 
-    footer {
-        padding: 10px; /* Standard footer padding */
-    }
-}
