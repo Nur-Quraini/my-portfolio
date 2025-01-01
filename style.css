@@ -41,6 +41,12 @@ header nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
+    transition: color 0.3s; /* Smooth color change on hover */
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Change text color on hover */
+    text-decoration: underline; /* Optional: Underline text when hovered */
 }
 
 /* Section Styles */
