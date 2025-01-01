@@ -8,16 +8,16 @@ body {
 
 /* Header Section with GIF Background */
 header {
-    background: url('https://raw.githubusercontent.com/Nur-Quraini/my-portfolio/main/ezgif-5-d1732a4864.gif') no-repeat center center/cover;
+    background: url('https://raw.githubusercontent.com/Nur-Quraini/my-portfolio/main/ezgif-5-d1732a4864.gif') no-repeat center center;
     color: white;
     text-align: center;
-    padding: 50px 20px; /* Increase padding for better visibility */
+    padding: 0; /* Remove extra padding */
     position: sticky;
     top: 0;
-    width: 100%;
-    background-size: cover;
+    width: 100%; /* Full width */
+    background-size: cover; /* GIF covers the entire header */
     background-position: center;
-    height: 150px; /* Adjust the height as per your preference */
+    height: 200px; /* Set height explicitly */
 }
 
 header h1 {
