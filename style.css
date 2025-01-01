@@ -58,12 +58,17 @@ nav ul li a {
     text-decoration: none; /* Remove underline from the links */
     font-size: 1.2em; /* Adjust the font size for the links */
     padding: 5px 10px; /* Add padding around the links */
-    transition: background-color 0.3s; /* Smooth background transition on hover */
+    transition: color 0.3s; /* Smooth color change on hover */
 }
 
 nav ul li a:hover {
-    background-color: #555; /* Darken the background on hover */
-    border-radius: 5px; /* Optional: Add rounded corners on hover */
+    color: #ffcc00; /* Change text color on hover (you can pick any color) */
+    /* No background color here */
+}
+
+/* Optional: If you want to give a subtle effect for the active/hover link, you could also try adding an underline */
+nav ul li a:hover {
+    text-decoration: underline; /* Optional: Underline text when hovered */
 }
 
 /* Section Styling */
