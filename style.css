@@ -8,9 +8,10 @@ body {
 
 /* Header Section with GIF Background */
 header {
-    display: flex; /* Use flexbox */
-    justify-content: center; /* Horizontally center the content */
-    align-items: center; /* Vertically center the content */
+    display: flex;
+    flex-direction: column; /* Arrange content vertically */
+    justify-content: center; /* Vertically center the content */
+    align-items: center; /* Horizontally center the content */
     background: url('https://raw.githubusercontent.com/Nur-Quraini/my-portfolio/main/ezgif-5-d1732a4864.gif') no-repeat center center;
     color: white;
     text-align: center;
@@ -20,87 +21,146 @@ header {
     width: 100%; /* Full width */
     background-size: cover; /* GIF covers the entire header */
     background-position: center;
-    height: 150px; /* Set height explicitly */
+    height: 250px; /* Set height explicitly */
 }
 
 header h1 {
-    font-size: 2em; /* Adjust the font size to make it more visible */
-    margin: 0; /* Remove any margin */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds shadow for better readability */
+    font-size: 2.5em; /* Adjust the font size for the main heading */
+    margin: 0; /* Remove any default margin */
+}
+
+header h2, header p {
+    margin: 0; /* Remove margin for better alignment */
+    font-size: 1.5em; /* Adjust font size for other headings and paragraphs */
 }
 
 /* Navigation Bar */
-header nav ul {
-    list-style: none;
+nav {
+    background-color: #333; /* Dark background for the navbar */
+    text-align: center;
+    padding: 10px 0; /* Space around the nav links */
+}
+
+nav ul {
+    list-style: none; /* Remove default list style */
     padding: 0;
     margin: 0;
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: center; /* Center the links horizontally */
 }
 
-header nav ul li {
-    display: inline;
-    margin: 0 15px;
+nav ul li {
+    margin: 0 20px; /* Add spacing between the links */
 }
 
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
+nav ul li a {
+    color: white; /* Link text color */
+    text-decoration: none; /* Remove underline from the links */
+    font-size: 1.2em; /* Adjust the font size for the links */
+    padding: 5px 10px; /* Add padding around the links */
+    transition: background-color 0.3s; /* Smooth background transition on hover */
 }
 
-/* Section Styles */
+nav ul li a:hover {
+    background-color: #555; /* Darken the background on hover */
+    border-radius: 5px; /* Optional: Add rounded corners on hover */
+}
+
+/* Section Styling */
 section {
     padding: 20px;
     margin: 20px;
     background-color: white;
-    border-radius: 5px;
+    border-radius: 5px; /* Rounded corners for the section */
 }
 
-h2 {
-    color: #333;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    margin: 10px 0;
-}
-
-/* Footer Style */
+/* Footer Styling */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
 }
 
-/* Media Queries for responsiveness */
-@media (max-width: 600px) {
-    header nav ul {
-        text-align: center;
-        margin-top: 10px;
+/* Media Queries for Responsiveness */
+
+/* Mobile devices (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+    header {
+        height: 200px; /* Decrease header height on smaller screens */
     }
 
-    header nav ul li {
-        display: block;
-        margin: 5px 0;
+    header h1 {
+        font-size: 2em; /* Reduce the font size */
+    }
+
+    header h2, header p {
+        font-size: 1.2em; /* Adjust font size of other text */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack nav items vertically */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Add space between vertically stacked links */
+    }
+
+    nav ul li a {
+        font-size: 1.2em; /* Adjust font size */
+        padding: 10px; /* Add padding for better touch interaction */
     }
 
     section {
-        margin: 10px;
+        padding: 15px; /* Reduce padding on smaller screens */
+        margin: 15px; /* Reduce margin */
+    }
+
+    footer {
+        padding: 8px; /* Adjust footer padding */
     }
 }
 
-        margin: 5px 0;
+/* Tablet devices (max-width: 1024px) */
+@media only screen and (max-width: 1024px) {
+    header {
+        height: 220px; /* Adjust header height for tablet screens */
+    }
+
+    header h1 {
+        font-size: 2.3em; /* Adjust font size */
+    }
+
+    nav ul li a {
+        font-size: 1.1em; /* Adjust font size for tablet */
     }
 
     section {
-        margin: 10px;
+        padding: 18px; /* Slightly reduce padding */
+        margin: 18px; /* Slightly reduce margin */
     }
 }
 
+/* Desktop devices (min-width: 1024px) */
+@media only screen and (min-width: 1024px) {
+    header {
+        height: 250px; /* Keep header height for larger screens */
+    }
+
+    header h1 {
+        font-size: 2.5em; /* Keep the larger font size */
+    }
+
+    nav ul li a {
+        font-size: 1.2em; /* Standard font size for links */
+    }
+
+    section {
+        padding: 20px; /* Default padding for larger screens */
+        margin: 20px; /* Default margin for larger screens */
+    }
+
+    footer {
+        padding: 10px; /* Standard footer padding */
+    }
+}
