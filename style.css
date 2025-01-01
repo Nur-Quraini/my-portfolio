@@ -12,7 +12,7 @@ header {
     flex-direction: column; /* Stack the content vertically */
     justify-content: flex-start; /* Align items at the top */
     align-items: center; /* Horizontally center the content */
-    background: url('https://github.com/your-username/your-repository/raw/main/path-to-your-gif.gif') no-repeat center center;
+    background: url('https://raw.githubusercontent.com/Nur-Quraini/my-portfolio/main/ezgif-5-d1732a4864.gif') no-repeat center center;
     color: white;
     text-align: center;
     padding: 40px; /* Add space around header */
