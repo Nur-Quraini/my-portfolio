@@ -8,7 +8,7 @@ body {
 
 /* Header Section with GIF Background */
 header {
-    background: url('https://github.com/Nur-Quraini/my-portfolio/blob/main/ezgif-5-d1732a4864.gif') no-repeat center center/cover;
+    background: url('ezgif-5-d1732a4864.gif') no-repeat center center/cover;
     color: white;
     text-align: center;
     padding: 100px 20px; /* Increase padding for better visibility */
