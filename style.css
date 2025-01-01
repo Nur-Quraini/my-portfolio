@@ -12,7 +12,7 @@ header {
     flex-direction: column; /* Arrange content vertically */
     justify-content: center; /* Vertically center the content */
     align-items: center; /* Horizontally center the content */
-    background: url('https://raw.githubusercontent.com/Nur-Quraini/my-portfolio/main/ezgif-5-d1732a4864.gif') no-repeat center center;
+    background: url('https://github.com/your-username/your-repository/raw/main/path-to-your-gif.gif') no-repeat center center;
     color: white;
     text-align: center;
     padding: 0; /* Remove extra padding */
@@ -36,9 +36,13 @@ header h2, header p {
 
 /* Navigation Bar */
 nav {
-    background-color: #333; /* Dark background for the navbar */
+    position: absolute; /* Position it on top of the header */
+    top: 0;
+    width: 100%; /* Full width of the header */
+    background-color: transparent; /* No background */
     text-align: center;
     padding: 10px 0; /* Space around the nav links */
+    z-index: 1; /* Ensure navbar is above the header content */
 }
 
 nav ul {
@@ -62,12 +66,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ffcc00; /* Change text color on hover (you can pick any color) */
-    /* No background color here */
-}
-
-/* Optional: If you want to give a subtle effect for the active/hover link, you could also try adding an underline */
-nav ul li a:hover {
+    color: #ffcc00; /* Change text color on hover */
     text-decoration: underline; /* Optional: Underline text when hovered */
 }
 
@@ -86,6 +85,7 @@ footer {
     text-align: center;
     padding: 10px;
 }
+
 
 /* Media Queries for Responsiveness */
 
