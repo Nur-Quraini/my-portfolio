@@ -11,18 +11,18 @@ header {
     background: url('https://raw.githubusercontent.com/Nur-Quraini/my-portfolio/main/ezgif-5-d1732a4864.gif') no-repeat center center/cover;
     color: white;
     text-align: center;
-    padding: 20px 10px;
+    padding: 20px 10px; /* Increase padding for better visibility */
     position: sticky;
     top: 0;
     width: 100%;
     background-size: cover;
     background-position: center;
-    height: 150px;
+    height: 150px; /* Adjust the height as per your preference */
 }
 
 header h1 {
     font-size: 3em;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds shadow for better readability */
 }
 
 /* Navigation Bar */
@@ -41,12 +41,12 @@ header nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
-    transition: color 0.3s;
+    transition: color 0.3s; /* Smooth color change on hover */
 }
 
 nav ul li a:hover {
-    color: #ffcc00;
-    text-decoration: underline;
+    color: #ffcc00; /* Change text color on hover */
+    text-decoration: underline; /* Optional: Underline text when hovered */
 }
 
 /* Section Styles */
@@ -61,17 +61,13 @@ h2 {
     color: #333;
 }
 
-/* Portfolio Image Styling */
-.portfolio-img {
-    width: 200px;
-    height: auto;
-    border-radius: 8px;
-    margin-right: 15px;
-    transition: transform 0.3s ease;
+ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-.portfolio-img:hover {
-    transform: scale(1.05);
+ul li {
+    margin: 10px 0;
 }
 
 /* Footer Style */
@@ -100,7 +96,6 @@ footer {
     section {
         margin: 10px;
     }
-}
 }
 /* About Section - Two Column Layout */
 .about-content {
@@ -136,8 +131,4 @@ section p {
 /* Custom Style for Project 1 Text */
 .project-1-text {
     color: black; /* Set the text color to black */
-}
-/* Custom Style for Project 1 Text */
-.project-1-text {
-    color: black;
 }
