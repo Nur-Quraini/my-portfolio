@@ -141,6 +141,18 @@ section p {
     transform: scale(1.1); /* Zoom effect on hover */
 }
 
+/* graphic Section - Styling the images */
+.graphic-img {
+    width: 250px; /* Adjust width as per your preference */
+    height: auto; /* Keep aspect ratio */
+    border-radius: 8px; /* Optional: adds rounded corners to the image */
+    margin-right: 15px; /* Space between image and text */
+    transition: transform 0.3s ease; /* Adds smooth zoom effect */
+}
+
+.graphic-img:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
 /* Custom Style for Project 1 Text */
 .project-1-text {
     color: black; /* Set the text color to black */
