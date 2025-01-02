@@ -97,4 +97,23 @@ footer {
         margin: 10px;
     }
 }
+/* About Section - Two Column Layout */
+.about-content {
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: space-between; /* Space out the image and text */
+    gap: 20px; /* Space between the image and text */
+}
+
+.about-img {
+    width: 40%; /* Adjust width of the image */
+    height: auto; /* Keep the aspect ratio intact */
+    border-radius: 8px; /* Optional: adds rounded corners to the image */
+}
+
+section p {
+    flex: 1; /* Make the text take up remaining space */
+    font-size: 1.1em; /* Adjust font size */
+    line-height: 1.6; /* Line spacing for better readability */
+}
 
