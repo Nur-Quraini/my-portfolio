@@ -11,18 +11,18 @@ header {
     background: url('https://raw.githubusercontent.com/Nur-Quraini/my-portfolio/main/ezgif-5-d1732a4864.gif') no-repeat center center/cover;
     color: white;
     text-align: center;
-    padding: 20px 10px; /* Increase padding for better visibility */
+    padding: 20px 10px;
     position: sticky;
     top: 0;
     width: 100%;
     background-size: cover;
     background-position: center;
-    height: 150px; /* Adjust the height as per your preference */
+    height: 150px;
 }
 
 header h1 {
     font-size: 3em;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds shadow for better readability */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 /* Navigation Bar */
@@ -41,12 +41,12 @@ header nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
-    transition: color 0.3s; /* Smooth color change on hover */
+    transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #ffcc00; /* Change text color on hover */
-    text-decoration: underline; /* Optional: Underline text when hovered */
+    color: #ffcc00;
+    text-decoration: underline;
 }
 
 /* Section Styles */
@@ -61,13 +61,17 @@ h2 {
     color: #333;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
+/* Portfolio Image Styling */
+.portfolio-img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 15px;
+    transition: transform 0.3s ease;
 }
 
-ul li {
-    margin: 10px 0;
+.portfolio-img:hover {
+    transform: scale(1.05);
 }
 
 /* Footer Style */
@@ -97,39 +101,8 @@ footer {
         margin: 10px;
     }
 }
-/* About Section - Two Column Layout */
-.about-content {
-    display: flex;
-    align-items: center; /* Vertically center the content */
-    justify-content: space-between; /* Space out the image and text */
-    gap: 20px; /* Space between the image and text */
-}
 
-.about-img {
-    width: 20%; /* Adjust width of the image */
-    height: auto; /* Keep the aspect ratio intact */
-    border-radius: 8px; /* Optional: adds rounded corners to the image */
-}
-
-section p {
-    flex: 1; /* Make the text take up remaining space */
-    font-size: 1.1em; /* Adjust font size */
-    line-height: 1.6; /* Line spacing for better readability */
-}
-/* Project Section - Styling the images */
-.project-img {
-    width: 200px; /* Adjust width as per your preference */
-    height: auto; /* Keep aspect ratio */
-    border-radius: 8px; /* Optional: adds rounded corners to the image */
-    margin-right: 15px; /* Space between image and text */
-    transition: transform 0.3s ease; /* Adds smooth zoom effect */
-}
-
-.project-img:hover {
-    transform: scale(1.1); /* Zoom effect on hover */
-}
 /* Custom Style for Project 1 Text */
 .project-1-text {
-    color: black; /* Set the text color to black */
+    color: black;
 }
-
