@@ -128,4 +128,8 @@ section p {
 .project-img:hover {
     transform: scale(1.1); /* Zoom effect on hover */
 }
+/* Custom Style for Project 1 Text */
+.project-1-text {
+    color: black; /* Set the text color to black */
+}
 
