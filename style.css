@@ -83,6 +83,11 @@ footer {
 
 /* Media Queries for responsiveness */
 @media (max-width: 600px) {
+    /* Mobile adjustments */
+    header h1 {
+        font-size: 2em; /* Adjust font size for smaller screens */
+    }
+
     header nav ul {
         text-align: center;
         margin-top: 10px;
@@ -93,10 +98,82 @@ footer {
         margin: 5px 0;
     }
 
-    section {
-        margin: 10px;
+    .about-content {
+        flex-direction: column; /* Stack the image and text vertically */
+        text-align: center; /* Center-align the text */
+    }
+
+    .about-img {
+        width: 50%; /* Adjust image width for mobile */
+        margin: 0 auto; /* Center the image */
+    }
+
+    .about-content p {
+        font-size: 1em;
+    }
+
+    .project-img, .portfolio-img, .graphic-img {
+        width: 100%; /* Make images responsive */
+        margin: 10px 0;
+    }
+
+    .project-img:hover, .portfolio-img:hover, .graphic-img:hover {
+        transform: none; /* Disable hover zoom on mobile */
     }
 }
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    /* Tablet adjustments */
+    header h1 {
+        font-size: 2.5em; /* Slightly smaller font size for tablet */
+    }
+
+    .about-content {
+        flex-direction: row; /* Keep content in a row for tablets */
+        text-align: left;
+    }
+
+    .about-img {
+        width: 30%;
+    }
+
+    .about-content p {
+        font-size: 1.1em;
+    }
+
+    .project-img, .portfolio-img, .graphic-img {
+        width: 45%; /* Adjust image size for tablet */
+        margin-right: 10px;
+    }
+}
+
+@media (min-width: 1025px) {
+    /* Desktop adjustments */
+    header h1 {
+        font-size: 3em; /* Larger font size for desktop */
+    }
+
+    .about-content {
+        flex-direction: row; /* Maintain row layout on desktop */
+    }
+
+    .about-img {
+        width: 20%; /* Keep image width smaller for desktop */
+    }
+
+    .about-content p {
+        font-size: 1.2em;
+    }
+
+    .project-img, .portfolio-img, .graphic-img {
+        width: 250px; /* Default width for larger screens */
+    }
+
+    .project-img:hover, .portfolio-img:hover, .graphic-img:hover {
+        transform: scale(1.1); /* Enable hover zoom for desktop */
+    }
+}
+
 /* About Section - Two Column Layout */
 .about-content {
     display: flex;
