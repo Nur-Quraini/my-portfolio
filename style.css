@@ -106,8 +106,8 @@ footer {
 }
 
 .about-img {
-    width: 25%; /* Adjust width of the image */
-    height: 50px; /* Keep the aspect ratio intact */
+    width: 20%; /* Adjust width of the image */
+    height: 150px; /* Keep the aspect ratio intact */
     border-radius: 8px; /* Optional: adds rounded corners to the image */
 }
 
