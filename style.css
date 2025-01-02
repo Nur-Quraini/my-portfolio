@@ -132,23 +132,3 @@ section p {
 .project-1-text {
     color: black; /* Set the text color to black */
 }
-/* Style for Image Preview Overlay */
-.image-preview-container {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-}
-
-.preview-image {
-    max-width: 90%;
-    max-height: 90%;
-    object-fit: contain;
-    border-radius: 8px;
-}
